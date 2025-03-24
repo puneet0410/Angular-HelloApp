@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Helloworld';
+  imgUrl="../assets/BL_logo_square_jpg.jpg";
 
   ngOnInit(): void {
     this.title = "Hello from BridgeLabz.";
