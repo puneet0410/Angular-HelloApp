@@ -1,6 +1,11 @@
 <div>
-  <h1>{{ title }}</h1>
+  <h1>Hello {{ userName }} from BridgeLabz</h1>
   <img [src]="imgUrl" (click)="onClick($event)" alt="The BridgeLabz logo." />
+</div>
+<div class="input-form">
+  <input [(ngModel)]="userName" (input)="onInput($event)" placeholder="Enter your name" /> <br /><br />
+  <span class="error-output">{{ nameError }}</span>  <!-- Display validation error -->
+  
 </div>
 
 <router-outlet></router-outlet>
